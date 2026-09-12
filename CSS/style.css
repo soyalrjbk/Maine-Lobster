@@ -1,0 +1,332 @@
+/* Practicing Responsiveness on this web page assignment */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body, .pan nav a, .LBBlue nav a, footer a, .mac a{
+    color:white;
+}
+.LBBlue, main, .the-menu, .lobster-how-to, .find-the-wharf, .bottom { /*Puts entire page content inside a set-width leaving rooom on left and right, centering the contents*/
+  padding-left: max(20px, calc((100% - 1300px) / 2)); /*max() picks whichever value is bigger — so once the calculated padding would drop below 20px, it just uses 20px instead, guaranteeing you always have at least a little breathing room on the sides, no matter how narrow the screen gets.*/
+  padding-right: max(20px, calc((100% - 1300px) / 2));
+}
+.LBBlue{
+    display:flex;
+    background:rgba(23, 67, 91);
+    height:65px;
+    justify-content:space-between;
+    padding-top:13px;
+}
+.LBBlue nav ul {
+  display: flex;               
+  list-style: none;   
+  padding-top:13px;                      
+}
+.LBBlue nav ul li{
+   padding-right:60px;
+}
+.LBBlue nav ul li a{
+    border-radius: 50px;
+    background:rgba(227, 88, 46);
+    text-decoration:none;
+    padding:3px 10px 3px 10px;
+}
+.hero{
+    padding: 100px 0 100px 0;
+}
+.hero p{
+    width:400px;
+}
+.pan{
+    margin:50px 0 50px 0;
+}
+.pan nav ul {
+  display: flex;               
+  list-style: none;   
+  gap:50px;               
+}
+.pan li:first-child a{
+    border-radius: 50px;
+    background:rgba(227, 88, 46);
+    text-decoration:none; 
+    padding:10px 15px 10px 15px;
+}
+.pan ul li:nth-child(2) a{
+    border:1px solid white;
+    border-radius: 50px;
+    background:transparent;
+    text-decoration:none;
+    padding:10px 15px 10px 15px;
+}
+.bav{
+     text-align:center;
+}
+.slim{
+    font-family: "Lilita One", sans-serif;
+}
+.jim, .pek p{
+    color:rgba(25, 68, 92);
+}
+.tim{
+    font-size:100px;
+}
+.red{
+    color:rgba(213, 86, 49);
+}
+.the-menu>p{
+  color: rgba(25, 68, 92);
+}
+.lobster-how-to h5 {
+  color: white;
+}
+.the-menu h2, .lobster-how-to h2, .find-the-wharf h2{
+    font-size:13px;
+}
+.the-menu h5, .lobster-how-to h5, .find-the-wharf h5{
+    font-size: 32px;
+}
+.orange{
+    background:rgba(227, 88, 46);
+    height:40px;
+}
+.side{
+    display:flex;
+    gap:100px;
+    padding-top:40px;
+}
+.fan{
+    border-radius:10px;
+    border:1px solid rgba(233, 231, 222);
+    flex:1;
+    background: rgba(255, 252, 244);
+    padding: 20px 25px;
+}
+.bav{
+    padding-top:80px;
+}
+.one{
+    border-top:6px solid rgba(23, 67, 91);
+}
+.two{
+    border-top:6px solid rgba(227, 88, 46);
+}
+.red{
+    padding-bottom:20px;
+}
+
+/* Menu list (replaces the old <table> markup) */
+.the-menu .menu-list {
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.menu-item .item-name {
+    font-weight: bold;
+    color: rgba(25, 68, 92);
+    white-space: nowrap;
+}
+
+.menu-item .dots {
+    flex: 1;
+    border-bottom: 1px dotted rgba(25, 68, 92, 0.4);
+    margin: 0 10px;
+    transform: translateY(-4px);
+}
+
+.menu-item .item-price {
+    white-space: nowrap;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 0;
+}
+
+.description {
+    display: block;
+    text-align: left;
+    color: rgba(25, 68, 92, 0.6);
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.upen{
+    display:flex;
+    gap:150px;
+    padding-top:50px;
+}
+.upen span{
+    background:rgba(227, 88, 46);
+    border-radius: 50%;
+    padding:5px 10px 5px 10px;
+}
+.tyu{
+    background:rgba(48, 85, 105);
+    border-radius:10px;
+    border: 1px solid rgba(60, 93, 113);
+    padding: 25px 15px 5px 15px;
+    height:210px;
+    width:210px;
+}
+main{
+    min-height:700px;
+    background-image: linear-gradient(rgba(27, 48, 60, 0.65), rgba(27, 48, 60, 0.65)), url("Lobster Roll.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.the-menu{
+    height:600px;
+    padding-top:100px;
+    background:rgba(247, 242, 231);
+}
+.lobster-how-to{
+    height:550px;
+    background:rgba(23, 67, 91); 
+    padding-top:100px;
+}
+.find-the-wharf{
+   height:500px;
+   background:rgba(247, 242, 231);  
+   padding-top:100px;
+}
+.bottom{
+    background:rgba(15, 49, 67);    
+}
+.orange p{
+    text-align:center;
+    padding-top:10px;
+}
+.pek{
+    display:flex;
+    gap:200px;
+    padding-top:50px;
+}
+.pek div{
+    border-radius:10px;
+    background:rgba(255, 252, 244);
+    border:1px solid rgba(233, 231, 222);
+    height:200px;
+    width:500px;
+    padding:15px 20px 0px 20px;
+    line-height:30px;
+}
+.tin{
+    display:flex;
+    gap:300px;
+    padding-top:80px;
+    padding-bottom: 40px;
+}
+.tin div{
+    line-height:30px;
+}
+footer{
+    padding-top:40px;
+}
+footer a{
+    display:block;
+    text-align:center;
+    padding-bottom:40px;
+}
+@media (max-width:1024px){ /*Laptop*/
+    .upen{
+    gap:50px;
+}
+    .pek{
+    gap:50px;
+}
+}
+@media (max-width:768px){ /*Tablet*/
+    .upen{
+    gap:5px;
+}
+    .tyu{
+    height:auto;
+    }
+    .pek div{
+    height:auto;
+    }
+    .mac{
+    width:auto;
+    }
+    .LBBlue{
+    height: auto;
+    }
+    .LBBlue nav ul li{
+   padding-right:10px;
+    }
+   .tin{
+    gap:15px;
+   }
+}
+@media (max-width:480px){ /*Mobile*/
+    main{
+    background:rgba(21, 43, 56);
+    min-height:auto;
+    }
+    .LBBlue nav ul{
+        display: none;
+    }
+     .LBBlue{
+        padding-left:80px;
+     }
+    .slim, .red, footer, .hero p, .hero ul li{
+    text-align:center;
+    }
+     .pan nav ul{
+    justify-content: center;
+    }
+    .hero span{
+    display: block;
+    text-align: center;
+    }
+    .tim{
+        font-size:60px;
+    }
+    .the-menu{
+         height:auto;
+    }
+    .side{
+        flex-direction:column;
+        gap:20px;
+    }
+    .lobster-how-to{
+        height:auto;
+    }
+    .upen{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding-bottom:30px;
+    }
+    .tyu{
+        width:400px;
+        text-align:center;
+    }
+    .find-the-wharf{
+        height:auto;
+        padding-bottom:30px;
+    }
+    .find-the-wharf div{
+        text-align:center;
+    }
+    .pek{
+        flex-direction:column;
+        gap:10px;
+    }
+    .pek div{
+        width:auto;
+    }
+    .the-menu, .lobster-how-to, .find-the-wharf{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+}
